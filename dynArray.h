@@ -4,7 +4,7 @@
 
 #ifndef __TYPE
 #define __TYPE
-# define TYPE      int
+# define TYPE      char
 # define TYPE_SIZE sizeof(int)
 # endif
 
@@ -19,7 +19,7 @@
 typedef struct DynArr DynArr;
 
 /* Dynamic Array Functions */
-void initDynArr(DynArr *v, int capacity);	
+void initDynArr(DynArr *v, int capacity);
 DynArr *newDynArr(int cap);
 
 void freeDynArr(DynArr *v);
@@ -39,7 +39,7 @@ void pushDynArr(DynArr *v, TYPE val);
 TYPE topDynArr(DynArr *v);
 void popDynArr(DynArr *v);
 
-/* Bag Interface */	
+/* Bag Interface */
 /* Note addDynArr is already declared above*/
 int containsDynArr(DynArr *v, TYPE val);
 void removeDynArr(DynArr *v, TYPE val);
